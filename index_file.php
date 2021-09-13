@@ -57,5 +57,28 @@
 		$a[] = $c.",".$v."<br>";
 	}
 	print_r($a);
+
+	echo "<br>";
+
+	$x = 0;
+	while($x<=7) {
+		echo $x."<br>";
+		$x++;
+	}
+	echo $x;
+
+	echo "<br>";
+	function func($arg)  {
+		$result = 0;
+		for($i=0; $i<=$arg; $i++) {
+		  $result = $result + $i;
+		  echo $result."<br>";
+		}
+		return $result;
+	  }
+	  echo func(5);
+
+	  echo "<br>";
+	  echo $_SERVER['HTTP_HOST'];
 	
 ?>
